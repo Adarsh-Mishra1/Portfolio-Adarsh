@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="assets/bootstrap/js/bootstrap.bundle.js">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .logo-image{
+      max-height: 100px;
+      width: 200px;
+    }
+
+    a{
+      font-size: 40px;
+      font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+      color: rgb(245, 245, 245);
+      justify-content: center;
+      margin-top: 0px;
+      color: burlywood;
+    
+    }
+    .intro{
+      column-count: 3;
+      column-gap:40px;
+      width: 100%;
+      height: 30vh;
+      border: 3px solid blue;
+      column-rule-style: solid;
+      column-rule-width: 3px;
+      text-align: center;
+     border-radius: 25px;
+    }
+    
+    h2{
+      font-weight: 600;
+      width: 80%;
+    height: 120px;
+    background: rgb(80, 167, 224);
+    transition: width 2s;
+      font-size:40px;
+      position: relative;
+      top:60px;
+      color: white;
+  text-shadow: 50px 10px 200px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+
+    h2:hover{
+     
+      width: 100%;
+      color: rgb(250, 165, 153);
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      
+   
+    }
+   .container{
+     background-color: chocolate;
+   }
+
+   img{
+     max-height: 60%;
+     max-width:80%;
+    
+   }
+   .header-image img:first-child{
+      position: relative;
+      top:105px;
+      left: -390px;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+   }
+   
+
+   .header-image img:last-child{
+     position: absolute;
+     top:90px;
+     right: 150px;
+    width: 40%;
+     min-height: 70%;
+     max-height:60%;
+     border-radius: 55px;
+    
+     box-shadow: 20px 20px 30px  rgb(65, 57, 102);
+     }
+
+   #para{
+     font-size: 4rem;
+     text-align: center;
+     font-family: cursive;
+     text-shadow: 5px 2px 3px #FF0000;
+     color: rgb(149, 251, 255);
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+   }
+
+   .flex-container{
+    width: 70%;
+    margin-left: 10%;
+    padding: 20px;
+ 
+
+
+    }
+
+    .flex1{
+      width: 50%;
+      height: 70px;
+     border: 2px solid rgb(112, 184, 233);
+     border-radius: 22px;
+      font-size: 30px;
+      font-family: monospace;
+      font-weight: 700;
+      color: rgb(247, 255, 200);
+      transition: ease-out width 3s;
+      color: rgb(149, 251, 255);
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+     
+    }
+
+    .flex1:hover{
+      width:77%;
+      border: 3px solid red;
+      background-color: greenyellow;
+      color: black;
+      color: rgb(149, 251, 255);
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+    .flex2{
+      width: 50%;
+      height: 70px;
+      border: 2px solid rgb(112, 184, 233);
+     border-radius: 22px;
+      font-size: 30px;
+      font-family: monospace;
+      font-weight: 700;
+      color: rgb(149, 251, 255);
+      transition: ease-out width 3s;
+    }
+
+    .flex2:hover{
+      width:65%;
+      border: 3px solid red;
+      background-color: rgb(47, 206, 255);
+      color: black;
+      color: rgb(119, 145, 25);
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+    .flex3{
+      width: 50%;
+      height: 70px;
+      border: 2px solid rgb(112, 184, 233);
+     border-radius: 22px;
+      font-size: 30px;
+      font-family: monospace;
+      font-weight: 700;
+      color: rgb(158, 230, 124);
+      transition: ease-out width 3s;
+    }
+
+    .flex3:hover{
+      width:77%;
+      border: 3px solid red;
+      background-color: rgb(79, 207, 240);
+      color: rgb(182, 117, 117);
+ 
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+    }
+	
+	h2,h3{
+		max-width: 100%;
+		max-height: 4rem;
+	}
+  </style>
+
+</head>
+
+<body style="background-color: #201c29; color: #fdfdff;">
+  <nav class="navbar navbar-expand-sm  nav-tabs " style="background-color: #111111;">
+  <ul class="navbar  ">
+    <li class="logo">
+      <a class="nav-link" style="border: none;" href="#"><img src="assets/image/Capture.PNG" class="logo-image" alt="" ></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">CHIILDHOOD</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">EDUCATION</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">SKILL</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">HARDWORK</a>
+    </li>
+  </ul>
+</nav>
+<br>
+
+  
+<div class="row">
+  <div class="col-lg-6">
+    <div class="myself">
+      <center><h1>HELLO </h1></center>
+      <p id="para" style="margin-left:10%; ">Its me Adarsh. I am web developer. From beginner to Advance</p>
+    </div>
+  
+    <img src="assets/image/bg-intro-desktop.svg" alt="">
+   
+  </div>
+ 
+   <div class="col-lg-6" style="float: right;">
+   <div class="header-image">
+    <img src="assets/image/bg-intro-desktop.svg" alt="">
+    <img src="assets/image/IMG20210212105125.jpg" alt="logo me" >
+   </div>
+   
+   </div>
+
+
+</div>
+<br>
+  
+<div class="skills">
+  <center><h1>SKILLS</h1></center>
+</div>
+    <br>
+<div class="intro">
+  <div>
+    <h2>C PROGRAMMING LANGUAGE</h2>
+  </div>
+  <div>
+    <h2>C++</h2>
+  </div>
+  <div>
+    <h2>HTML</h2>
+  </div>
+ 
+</div>
+ 
+<div class="intro">
+  <div>
+    <h2>CSS</h2>
+  </div>
+  <div>
+    <h2>MYSQL</h2>
+  </div>
+  <div>
+    <h2>PHP</h2>
+  </div>
+ </div>
+ <section>
+   <br>
+   <br>
+  <div class="header">
+    <h1 style="text-align: center;">EDUCATION QUALIFICATION</h1>
+  </div>
+  <br>
+  
+  <div class="flex-container">
+    
+      <div style=" border: 3px solid rgb(158, 236, 135); border-radius: 25px; z-index: -1;">
+      <div class="flex1"><h3>GRADUATION 71%</h3></div>
+        </div>
+    
+  </div> 
+  <div class="flex-container">
+    <div style=" border: 3px solid rgb(250, 20, 12); border-radius: 25px; z-index: -1;">
+    <div class="flex2"><h3>INTERMEDIATE 65%</h3></div>
+      </div>
+    
+  </div> 
+
+  <div class="flex-container">
+    <div style=" border: 3px solid rgb(93, 157, 230); border-radius: 25px; z-index: -1;">
+       <div class="flex3"><h3>HIGH SCHOOL 77%</h3></div>
+    </div>
+   </div> 
+
+   <div class="flex-container">
+    <div style=" border: 3px solid rgb(250, 20, 12); border-radius: 25px; z-index: -1;">
+    <div class="flex2"><h3>CODING 55%</h3></div>
+      </div>
+    
+  </div> 
+
+  <div class="flex-container">
+    <div style=" border: 3px solid rgb(250, 20, 12); border-radius: 25px; z-index: -1;">
+    <div class="flex2"><h3>ENGLISH  COMMUNICATION 60%</h3></div>
+      </div>
+    
+  </div> 
+
+  <div class="flex-container">
+    <div style=" border: 3px solid rgb(250, 20, 12); border-radius: 25px; z-index: -1;">
+    <div class="flex2"><h3>MICROSOFT OFFICE 60%</h3></div>
+      </div>
+    
+  </div> 
+ </section>
+
+</body>
+</html>
