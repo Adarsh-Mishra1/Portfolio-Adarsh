@@ -27,37 +27,38 @@
     }
     .intro{
       column-count: 3;
-      column-gap:40px;
+      column-gap:4px;
       width: 100%;
-      height: 30vh;
+      height: 10vh;
       border: 3px solid blue;
       column-rule-style: solid;
       column-rule-width: 3px;
       text-align: center;
-     border-radius: 25px;
+       border-radius: 25px;
     }
     
     h2{
-      font-weight: 600;
-      width: 80%;
-    height: 120px;
-    background: rgb(80, 167, 224);
-    transition: width 2s;
-      font-size:40px;
+    
+      width: 100%;
+      height: auto;
+      background: rgb(80, 167, 224);
+      border: 2px solid;
+      border-radius: 11px;
+      transition: width 2s;
+      font-size:auto;
       position: relative;
-      top:60px;
+      top:1rem;
       color: white;
-  text-shadow: 50px 10px 200px black, 0 0 25px blue, 0 0 5px darkblue;
+      text-shadow: 50px 10px 200px black, 0 0 25px blue, 0 0 5px darkblue;
     }
 
     h2:hover{
      
       width: 100%;
       color: rgb(250, 165, 153);
-      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-      
-   
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;      
     }
+
    .container{
      background-color: chocolate;
    }
@@ -95,21 +96,15 @@
      font-family: cursive;
      text-shadow: 5px 2px 3px #FF0000;
      color: rgb(149, 251, 255);
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
    }
 
    .flex-container{
-    width: 70%;
-    margin-left: 10%;
-    padding: 20px;
- 
-
-
+    width: 100%;
+    padding: 20px; 
     }
 
-    .flex1{
-      width: 50%;
-      height: 70px;
+    .flex1{      
      border: 2px solid rgb(112, 184, 233);
      border-radius: 22px;
       font-size: 30px;
@@ -118,12 +113,12 @@
       color: rgb(247, 255, 200);
       transition: ease-out width 3s;
       color: rgb(149, 251, 255);
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
      
     }
 
     .flex1:hover{
-      width:77%;
+      width:100%;
       border: 3px solid red;
       background-color: greenyellow;
       color: black;
@@ -131,19 +126,20 @@
       text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     }
     .flex2{
-      width: 50%;
+      width: 99%;
       height: 70px;
       border: 2px solid rgb(112, 184, 233);
      border-radius: 22px;
-      font-size: 30px;
+      font-size: auto;
       font-family: monospace;
       font-weight: 700;
       color: rgb(149, 251, 255);
       transition: ease-out width 3s;
+      
     }
 
     .flex2:hover{
-      width:65%;
+      width:100%;
       border: 3px solid red;
       background-color: rgb(47, 206, 255);
       color: black;
@@ -151,7 +147,7 @@
       text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     }
     .flex3{
-      width: 50%;
+      width: 99%;
       height: 70px;
       border: 2px solid rgb(112, 184, 233);
      border-radius: 22px;
@@ -163,7 +159,7 @@
     }
 
     .flex3:hover{
-      width:77%;
+      width:100%;
       border: 3px solid red;
       background-color: rgb(79, 207, 240);
       color: rgb(182, 117, 117);
@@ -172,10 +168,29 @@
 
     }
 	
-	h2,h3{
-		max-width: 100%;
-		max-height: 4rem;
-	}
+	
+
+  h1{
+     word-wrap: break-word;
+     -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+     -ms-hyphens: auto;
+     -o-hyphens: auto;
+     hyphens: auto;
+    }
+
+    
+    @media screen and (max-width: 768px) {
+      h1{
+         font-size:2rem;
+      }
+    }  
+    
+    @media screen and (max-width: 468px) {
+      h2{
+         font-size:15PX;
+      }
+    }  
   </style>
 
 </head>
@@ -230,6 +245,18 @@
   <center><h1>SKILLS</h1></center>
 </div>
     <br>
+
+<div class="intro">
+    <div>
+      <h2>CODIGNITER </h2>
+    </div>
+    <div>
+      <h2>BOOTSTRAP</h2>
+    </div>
+    <div>
+      <h2>WORDPRESS</h2>
+    </div>     
+  </div>
 <div class="intro">
   <div>
     <h2>C </h2>
@@ -257,7 +284,7 @@
  <section>
    <br>
    <br>
-  <div class="header">
+  <div >
     <h1 style="text-align: center;">EDUCATION QUALIFICATION</h1>
   </div>
   <br>
