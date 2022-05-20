@@ -38,26 +38,25 @@
     }
     
     h2{
-      font-weight: 600;
+    
       width: 80%;
-    height: 120px;
-    background: rgb(80, 167, 224);
-    transition: width 2s;
-      font-size:40px;
+      height: auto;
+      background: rgb(80, 167, 224);
+      transition: width 2s;
+      font-size:auto;
       position: relative;
-      top:60px;
+      top:2rem;
       color: white;
-  text-shadow: 50px 10px 200px black, 0 0 25px blue, 0 0 5px darkblue;
+      text-shadow: 50px 10px 200px black, 0 0 25px blue, 0 0 5px darkblue;
     }
 
     h2:hover{
      
       width: 100%;
       color: rgb(250, 165, 153);
-      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-      
-   
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;      
     }
+
    .container{
      background-color: chocolate;
    }
@@ -95,21 +94,15 @@
      font-family: cursive;
      text-shadow: 5px 2px 3px #FF0000;
      color: rgb(149, 251, 255);
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
    }
 
    .flex-container{
     width: 70%;
-    margin-left: 10%;
-    padding: 20px;
- 
-
-
+    padding: 20px; 
     }
 
-    .flex1{
-      width: 50%;
-      height: 70px;
+    .flex1{      
      border: 2px solid rgb(112, 184, 233);
      border-radius: 22px;
       font-size: 30px;
@@ -135,11 +128,12 @@
       height: 70px;
       border: 2px solid rgb(112, 184, 233);
      border-radius: 22px;
-      font-size: 30px;
+      font-size: auto;
       font-family: monospace;
       font-weight: 700;
       color: rgb(149, 251, 255);
       transition: ease-out width 3s;
+      
     }
 
     .flex2:hover{
@@ -176,6 +170,27 @@
 		max-width: 100%;
 		max-height: 4rem;
 	}
+
+  h1{
+     word-wrap: break-word;
+     -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+     -ms-hyphens: auto;
+     -o-hyphens: auto;
+     hyphens: auto;
+    }
+
+    
+    @media screen and (max-width: 768px) {
+      h1{
+         font-size:2rem;
+      }
+    }  
+    @media screen and (max-width: 768px) {
+      h2{
+         font-size:33PX;
+      }
+    }  
   </style>
 
 </head>
@@ -257,7 +272,7 @@
  <section>
    <br>
    <br>
-  <div class="header">
+  <div >
     <h1 style="text-align: center;">EDUCATION QUALIFICATION</h1>
   </div>
   <br>
